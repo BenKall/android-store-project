@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/redwhitepretty"
+    tools:context=".MainHub">
+
+
+    <Button
+        android:id="@+id/btngobuy"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/buy"
+        android:drawableLeft="@drawable/cart"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/Logout"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <Button
+        android:id="@+id/btnorderhis"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/orderhis"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/update"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <Button
+        android:id="@+id/Deliveries"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/alldeli"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <Button
+        android:id="@+id/ADMIN"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/ADMIN"
+        android:visibility="invisible"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+
+</LinearLayout>

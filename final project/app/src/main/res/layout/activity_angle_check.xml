@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".angleCheck">
+
+    <TextView
+        android:id="@+id/txtexplenation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:text="@string/checkangle" />
+
+    <Button
+        android:id="@+id/btnmeasure"
+        android:layout_width="340dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="40dp"
+        android:textSize="60dp"
+        android:background="@drawable/redwhitegradient"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/zero" />
+
+    <Button
+        android:id="@+id/btntorecomm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:background="@drawable/roundbtn"
+        android:text="@string/con" />
+
+    <Button
+        android:id="@+id/backtoshopfromanglecheck"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/marzipan"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/back" />
+
+
+</LinearLayout>

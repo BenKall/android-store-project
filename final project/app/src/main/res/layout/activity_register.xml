@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redwhitepretty"
+    android:columnCount="4"
+
+    android:rowCount="6"
+
+    tools:context=".Register">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/Registration"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/marzipan"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/back" />
+
+            <EditText
+                android:id="@+id/editemail"
+                android:layout_width="250dp"
+                android:drawableLeft="@drawable/email"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/Type_email"
+                android:inputType="textPersonName" />\
+
+
+            <EditText
+                android:id="@+id/editphone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/phone"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/Type_Phone"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editFname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/finger"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/Type_F"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editLname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/finger"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/Type_L"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editpass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/lock"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/Type_Password"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/editweight"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/fit"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/Type_W"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editheight"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:drawableLeft="@drawable/size"
+                android:hint="@string/Type_H"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editadress"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/address"
+                android:background="@drawable/redwhite"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/Type_A"
+                android:inputType="textPersonName" />
+
+
+            <Spinner
+                android:id="@+id/choocity"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:layout_width="250dp"
+                android:popupBackground="@drawable/butnotroundbtn"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/editBday"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/redwhite"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="10sp"
+                android:drawableLeft="@drawable/cake"
+                android:text="@string/inputbd"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <RadioGroup
+                android:id="@+id/rdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="4"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:background="@drawable/redwhite"
+                android:layout_marginTop="40sp">
+
+                <RadioButton
+                    android:id="@+id/rdbmale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/Male"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbfemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/Female"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cricImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30sp"
+                android:background="@android:drawable/ic_menu_view"
+
+                 />
+
+            <Button
+                android:id="@+id/btnpic"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/redwhite"
+                android:text="@string/Choose_Pic"
+                android:drawableLeft="@drawable/image"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <Button
+                android:id="@+id/btnsend"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="40sp"
+                android:background="@drawable/redwhite"
+                android:drawableLeft="@drawable/save"
+                android:text="@string/Save"
+                android:fontFamily="sans-serif-smallcaps"/>
+        </LinearLayout>
+    </ScrollView>
+
+</GridLayout>

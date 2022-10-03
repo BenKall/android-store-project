@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="15dp"
+        android:layout_margin="30dp">
+
+        <GridLayout
+            android:id="@+id/grd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="2"
+            >
+
+            <ImageView
+                android:id="@+id/imgur"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@android:drawable/ic_menu_compass"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_rowSpan="2"/>
+
+            <TextView
+                android:id="@+id/txtittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"
+                android:textColor="@color/cardview_dark_background"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/txtmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:text="TextView" />
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

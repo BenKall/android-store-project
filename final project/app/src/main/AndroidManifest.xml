@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.palacio">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShowAllZeroAmountProductsForAdmin"></activity>
+        <activity android:name=".ShowRecommendedProducts" />
+        <activity android:name=".angleCheck" />
+        <activity android:name=".userDeliveryInfo" />
+        <activity android:name=".userDeliveryInfoForAdmin" />
+        <activity android:name=".makeDelivery" />
+        <activity android:name=".orderDetailsHistory" />
+        <activity android:name=".orderHistory" />
+        <activity android:name=".userInfoForAdmin" />
+        <activity android:name=".viewUsers" />
+        <activity android:name=".Cart" />
+        <activity android:name=".userCheckProduct" />
+        <activity android:name=".ShowMattressProducts" />
+        <activity android:name=".ShowTableProducts" />
+        <activity android:name=".ShowSofaProducts" />
+        <activity android:name=".ShowChairProducts" />
+        <activity android:name=".ShowAllProducts" />
+        <activity android:name=".updateProduct" />
+        <activity android:name=".finishadding" />
+        <activity android:name=".addproduct" />
+        <activity android:name=".admin" />
+        <activity android:name=".shop" />
+        <activity android:name=".loading1" />
+        <activity android:name=".Update" />
+        <activity android:name=".MainHub" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

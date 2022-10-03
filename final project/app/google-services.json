@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "85397438160",
+    "firebase_url": "https://final-project-9dd22.firebaseio.com",
+    "project_id": "final-project-9dd22",
+    "storage_bucket": "final-project-9dd22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85397438160:android:54fd00641b5c2f446168d5",
+        "android_client_info": {
+          "package_name": "com.example.palacio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85397438160-q1it353a6ekun2vfml01h15pi315ikbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.palacio",
+            "certificate_hash": "735711b25349412bc861124023624e334f5c58c0"
+          }
+        },
+        {
+          "client_id": "85397438160-e01ejn5mlmp5fig5145frjik0gtfuff7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8YH0OcRdl3FWt3ue_fhf0_1w0WLqAJpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85397438160-e01ejn5mlmp5fig5145frjik0gtfuff7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

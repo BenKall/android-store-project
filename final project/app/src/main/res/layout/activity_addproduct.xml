@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/redwhitepretty"
+    tools:context=".addproduct">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/addproduct"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnbacktoadmin"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/marzipan"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/back" />
+
+
+
+    <EditText
+        android:id="@+id/proname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/redwhite"
+        android:drawableLeft="@drawable/square"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/proname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/prodescription"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/redwhite"
+        android:drawableLeft="@drawable/description"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/prodes"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/protype"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/protype"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15sp"
+        android:popupBackground="@drawable/butnotroundbtn" />
+
+    <EditText
+        android:id="@+id/proprice"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/redwhite"
+        android:drawableLeft="@drawable/price"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/propri"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/proamount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/redwhite"
+        android:drawableLeft="@drawable/amount"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/proamount"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/anglerange"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdgA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gradient2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbAa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/A"
+                android:checked="true"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdbAb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/B"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/rdbAc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/C"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/weightrange"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdgW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gradient2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbWa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/A"
+                android:checked="true"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdbWb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/B"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/rdbWc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/C"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/heightrange"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdgH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gradient2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbHa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/A"
+                android:checked="true"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdbHb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/B"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/rdbHc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/C"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnpickpic"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/marzipan"
+            android:drawableLeft="@drawable/image"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/addProductImage" />
+
+        <Button
+            android:id="@+id/addproduct"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundbtn"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/Save" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

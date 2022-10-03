@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/redwhite"
+    tools:context=".userCheckProduct">
+
+    <Button
+        android:id="@+id/btnbacktoshop"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/marzipan"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/back" />
+    <Button
+        android:id="@+id/updateprods"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/marzipan"
+        android:drawableLeft="@drawable/moveto"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/Updateprods" />
+
+
+    <TextView
+        android:id="@+id/chosenproname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/butnotroundbtn"
+        android:drawableLeft="@drawable/square"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20dp"
+        android:text="@string/proname" />
+
+    <TextView
+        android:id="@+id/chosenprodes"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/butnotroundbtn"
+        android:drawableLeft="@drawable/description"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20dp"
+        android:text="@string/prodes" />
+
+    <TextView
+        android:id="@+id/chosenprotype"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/butnotroundbtn"
+        android:drawableLeft="@drawable/lines"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20dp"
+        android:text="@string/protype" />
+
+    <TextView
+        android:id="@+id/chosenproamount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/butnotroundbtn"
+        android:drawableLeft="@drawable/amount"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20dp"
+        android:text="@string/proamount" />
+
+    <TextView
+        android:id="@+id/chosenproprice"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/roundbtn"
+        android:drawableLeft="@drawable/price"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/empty" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btnbuyproduct"
+                android:layout_width="84dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:drawableLeft="@drawable/addtocart"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/roundbtn"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/buypro" />
+
+        <ImageButton
+            android:id="@+id/btnamountleft"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/gradient2"
+            app:srcCompat="@drawable/sub" />
+
+        <Button
+            android:id="@+id/btnchooseamount"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/roundbtn"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/empty" />
+
+        <ImageButton
+            android:id="@+id/btnamountright"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gradient2"
+            app:srcCompat="@drawable/add" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/piclist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
